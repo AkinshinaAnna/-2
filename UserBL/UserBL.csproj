@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A4A1066-32AA-4BC5-9ADA-1B822A5C0747}</ProjectGuid>
+    <ProjectGuid>{F23153B2-52AF-4716-B0D0-3E9469545B58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BL</RootNamespace>
-    <AssemblyName>BL</AssemblyName>
+    <RootNamespace>UserBL</RootNamespace>
+    <AssemblyName>UserBL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,14 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayUtils.cs" />
-    <Compile Include="ClassArr.cs" />
-    <Compile Include="ClassConvert.cs" />
-    <Compile Include="ClassCycle.cs" />
-    <Compile Include="ClassList.cs" />
-    <Compile Include="ClassMatrix.cs" />
-    <Compile Include="ClassString.cs" />
-    <Compile Include="FilesUtils.cs" />
+    <Compile Include="CommandLine.cs" />
+    <Compile Include="DataConverter.cs" />
+    <Compile Include="DataGridViewUtils.cs" />
+    <Compile Include="IOUtils.cs" />
+    <Compile Include="MessagesUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

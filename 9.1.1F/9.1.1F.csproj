@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CFE292D-CDF0-49DB-B1EF-013904D99B9D}</ProjectGuid>
+    <ProjectGuid>{D224F700-E7E3-420A-921F-85A391485AC4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>khgkuih</RootNamespace>
-    <AssemblyName>khgkuih</AssemblyName>
+    <RootNamespace>_9._1._1F</RootNamespace>
+    <AssemblyName>9.1.1F</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -80,9 +80,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BL\BL.csproj">
+    <ProjectReference Include="..\BL\MyLibrary.csproj">
       <Project>{4a4a1066-32aa-4bc5-9ada-1b822a5c0747}</Project>
-      <Name>BL</Name>
+      <Name>MyLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserBL\UserBL.csproj">
+      <Project>{f23153b2-52af-4716-b0d0-3e9469545b58}</Project>
+      <Name>UserBL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

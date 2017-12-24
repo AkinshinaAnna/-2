@@ -16,15 +16,19 @@ namespace BL
             this.List = list;
         }
 
-        public void Process()
+        public  List<int> Process()
         {
+            List<int> list2 = new List<int>();
+            for (int i = 0; i < List.Count; i++)
+                list2.Add(List[i]);
 
-            for (int i = 0; i < List.Count / 2; i++)
+            for (int i = 0; i < list2.Count / 2; i++)
             {
-                int c = List[i];
-                List[i] = List[List.Count - 1 - i];
-                List[List.Count - 1 - i] = c;
+                int c = list2[i];
+                list2[i] = list2[list2.Count - 1 - i];
+                list2[list2.Count - 1 - i] = c;
             }
+            return list2;
         }
 
     }

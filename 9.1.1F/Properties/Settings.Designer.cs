@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace khgkuih.Properties
+namespace _9._1._1F.Properties
 {
 
 

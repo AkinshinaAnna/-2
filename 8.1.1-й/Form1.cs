@@ -22,9 +22,9 @@ namespace _8._1._1_й
         {
             List<int> list = ClassConvert.StrToList<int>(InputListtextBox1.Text);
             ClassList changedlist = new ClassList(list);
-            changedlist.Process();
+            List<int> newlist = changedlist.Process();
 
-            OutputListlabel.Text = ClassConvert.ListToStr(list, " ");
+            OutputListlabel.Text = ClassConvert.ListToStr(newlist, " ");
 
 
         }
