@@ -104,7 +104,7 @@ namespace _9._1._1_C_
                 Console.WriteLine(result);
 
                
-                if (AskQuestion("считать с файла? y/n  "))
+                if (AskQuestion("сохранить в файл? y/n  "))
                 {
                     SaveResultToFile(result);
                 }
